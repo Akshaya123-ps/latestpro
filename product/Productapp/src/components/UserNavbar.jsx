@@ -12,7 +12,7 @@ const UserNavbar = () => {
                 
                 <Link to="/v" ><Button variant="contained" sx={{background:'rgb(97, 34, 190)'}}>View</Button></Link>&nbsp;
                <Link to="/user" ><Button variant="contained" sx={{background:'rgb(97, 34, 190)'}}>Profile</Button></Link>&nbsp; 
-                
+                <Link to="/addto" ><Button variant="contained" sx={{background:'rgb(97, 34, 190)'}}>Cart</Button></Link>&nbsp;
             </Toolbar>
         </AppBar>
         
