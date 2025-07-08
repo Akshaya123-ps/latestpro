@@ -103,7 +103,15 @@ app.delete('/del/:id',async(req,res)=>{
     } catch (error) {
         console.log(error)
     }
-})
+});
+app.delete('/delcart/:id', async(req, res) => {
+  try {
+    await CartModel.findByIdAndDelete(req.params.id);
+    res.send({message: "Item removed from cart"});
+  } catch (error) {
+   console.log(error)
+  }
+});
 //api update
 app.put('/up/:id',async(req,res)=>{
     try {
